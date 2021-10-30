@@ -1,0 +1,13 @@
+.not-found{
+    height: 500px;
+    background-color: #2193B0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.not-found h1{
+font-size: 80px;
+font-weight: 700;
+color: rgb(221, 54, 54);
+}
