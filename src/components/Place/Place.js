@@ -5,7 +5,7 @@ import './Place.css'
 const Place = ({ place }) => {
     return (
         <div className="col">
-            <div className="card h-100">
+            <div className="card shadow h-100">
                 <img style={{ height: '300px' }} src={place.img} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{place.name}</h5>

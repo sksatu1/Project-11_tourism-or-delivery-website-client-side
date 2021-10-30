@@ -6,7 +6,7 @@ import Place from '../Place/Place';
 const Places = () => {
     const [places, setPlaces] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/places')
+        fetch('https://murmuring-ravine-36606.herokuapp.com/places')
             .then(res => res.json())
             .then(data => setPlaces(data))
     }, [])
