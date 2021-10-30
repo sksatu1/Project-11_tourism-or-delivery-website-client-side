@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import Headers from './components/Headers/Headers';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
+import MyOrders from './components/MyOrders/MyOrders';
 import NotFound from './components/NotFound/NotFound';
 import OrderReview from './components/OrderReview/OrderReview';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
@@ -31,7 +32,11 @@ function App() {
               <Login></Login>
             </Route>
 
-            <PrivateRoute path='/orderReview'>
+            <Route path='/myOrders'>
+              <MyOrders></MyOrders>
+            </Route>
+
+            <PrivateRoute path='/orderReview/:id'>
               <OrderReview></OrderReview>
             </PrivateRoute>
 
