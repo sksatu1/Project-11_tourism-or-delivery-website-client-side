@@ -1,7 +1,7 @@
 import React from 'react';
 
 const OtherOrder = ({ data }) => {
-    const { _id, status } = data;
+    const { _id, status, userName, email } = data;
     const { name, description, img } = data.order;
     console.log('data', data);
 
@@ -40,6 +40,11 @@ const OtherOrder = ({ data }) => {
                 <img style={{ height: '300px' }} src={img} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
+                    <br />
+                    <p>Ordered By : {userName}</p>
+                    <p className="card-title">User-email : {email}</p>
+                    <br />
+
                     <p className="card-text">{description}</p>
                     <p className="card-text fw-bolder p-3 bg-danger">{status}</p>
 
