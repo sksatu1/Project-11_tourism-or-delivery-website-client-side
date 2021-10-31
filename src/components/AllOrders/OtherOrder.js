@@ -41,8 +41,8 @@ const OtherOrder = ({ data }) => {
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <br />
-                    <p>Ordered By : {userName}</p>
-                    <p className="card-title">User-email : {email}</p>
+                    <p className="fw-bold">Ordered By : {userName}</p>
+                    <p className="fw-bold">User-email : {email}</p>
                     <br />
 
                     <p className="card-text">{description}</p>
