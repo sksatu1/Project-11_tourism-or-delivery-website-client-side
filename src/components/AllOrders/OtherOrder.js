@@ -19,6 +19,21 @@ const OtherOrder = ({ data }) => {
             })
     }
 
+    // delete --------------------------
+    const handleDelete = () => {
+        const proceed = window.confirm('Are you sure you want to delete?')
+
+        if (proceed) {
+            fetch(`https://murmuring-ravine-36606.herokuapp.com/orders/${_id}`, {
+                method: 'DELETE',
+            })
+                .then(res => res.json())
+                .then(data => {
+                    window.location.reload();
+                })
+        }
+    }
+
     return (
         <div className="col">
             <div className="card shadow h-100">
@@ -30,7 +45,7 @@ const OtherOrder = ({ data }) => {
 
                     <button type="button" onClick={handleConfirm} className="btn btn-outline-danger my-btn me-4">Confirm</button>
 
-                    <button type="button" className="btn btn-outline-danger my-btn ms-4">Delete</button>
+                    <button type="button" onClick={handleDelete} className="btn btn-outline-danger my-btn ms-4">Delete</button>
                 </div>
             </div>
         </div>

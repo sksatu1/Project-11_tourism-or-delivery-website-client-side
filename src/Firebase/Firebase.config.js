@@ -1,9 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyAaE4coOuhhaYcGzWsRc4vZPqd_gIwl_AU",
-  authDomain: "react-firebase-authentic-fddb8.firebaseapp.com",
-  projectId: "react-firebase-authentic-fddb8",
-  storageBucket: "react-firebase-authentic-fddb8.appspot.com",
-  messagingSenderId: "648755776980",
-  appId: "1:648755776980:web:12d0aa8ac091a127009a41"
+  apiKey: "AIzaSyCwALQJtpFVB2JpDRBrv7TdAP4upE-3Hec",
+  authDomain: "sk-travel-427e8.firebaseapp.com",
+  projectId: "sk-travel-427e8",
+  storageBucket: "sk-travel-427e8.appspot.com",
+  messagingSenderId: "410899946228",
+  appId: "1:410899946228:web:4d1aa8ac55de80aaa1dca1"
 };
 export default firebaseConfig;

@@ -1,5 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
+import AddPlace from './components/AddPlace/AddPlace';
 import AddPlaces from './components/AddPlaces/AddPlaces';
 import AllOrders from './components/AllOrders/AllOrders';
 import Footer from './components/Footer/Footer';
@@ -34,13 +35,17 @@ function App() {
               <Login></Login>
             </Route>
 
-            <Route path='/allOrders'>
+            <PrivateRoute path='/allOrders'>
               <AllOrders></AllOrders>
-            </Route>
+            </PrivateRoute>
 
-            <Route path='/myOrders'>
+            <PrivateRoute path='/addPlace'>
+              <AddPlace></AddPlace>
+            </PrivateRoute>
+
+            <PrivateRoute path='/myOrders'>
               <MyOrders></MyOrders>
-            </Route>
+            </PrivateRoute>
 
             <PrivateRoute path='/orderReview/:id'>
               <OrderReview></OrderReview>

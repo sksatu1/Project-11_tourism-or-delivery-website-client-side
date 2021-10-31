@@ -15,12 +15,30 @@ const MyOrder = ({ myOrder }) => {
             .then(res => res.json())
             .then(data => {
                 window.location.reload();
+
             })
     }
 
+    // delete --------------------------
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you sure you want to delete?')
+
+        if (proceed) {
+            fetch(`https://murmuring-ravine-36606.herokuapp.com/orders/${_id}`, {
+                method: 'DELETE',
+            })
+                .then(res => res.json())
+                .then(data => {
+                    alert('successfully deleted order');
+                    window.location.reload();
+                })
+        }
+    }
+
+
     return (
         <div className="col">
-            <div className="card">
+            <div className="card h-100">
                 <img src={img} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
@@ -30,7 +48,7 @@ const MyOrder = ({ myOrder }) => {
 
                     <button type="button" onClick={handleConfirm} className="btn btn-outline-danger my-btn me-4">Confirm</button>
 
-                    <button type="button" className="btn btn-outline-danger my-btn ms-4">Delete</button>
+                    <button type="button" onClick={handleDelete} className="btn btn-outline-danger my-btn ms-4">Delete</button>
 
                 </div>
             </div>
