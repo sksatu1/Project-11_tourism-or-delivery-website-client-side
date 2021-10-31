@@ -21,7 +21,7 @@ const Headers = () => {
                         <Nav.Link as={HashLink} to="/home#places">Places</Nav.Link>
                         {user.email && <Nav.Link as={Link} to="/myOrders">My Orders</Nav.Link>}
 
-                        {user.email && <Nav.Link as={Link} to="/allOrders">All rders</Nav.Link>}
+                        {user.email && <Nav.Link as={Link} to="/allOrders">All Orders</Nav.Link>}
 
                         {user.email &&
                             <Nav.Link as={Link} to="/addPlace">Add Place</Nav.Link>

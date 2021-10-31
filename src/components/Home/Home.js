@@ -1,6 +1,5 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import Cart from '../Cart/Cart';
 import Guide from '../Guide/Guide';
 import Introduction from '../Introduction/Introduction';
 import Places from '../Places/Places';

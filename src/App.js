@@ -1,13 +1,13 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AddPlace from './components/AddPlace/AddPlace';
-import AddPlaces from './components/AddPlaces/AddPlaces';
+// import AddPlaces from './components/AddPlaces/AddPlaces';
 import AllOrders from './components/AllOrders/AllOrders';
 import Footer from './components/Footer/Footer';
 import Headers from './components/Headers/Headers';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
-import MyOrder from './components/MyOrder/MyOrder';
+// import MyOrder from './components/MyOrder/MyOrder';
 import MyOrders from './components/MyOrders/MyOrders';
 import NotFound from './components/NotFound/NotFound';
 import OrderReview from './components/OrderReview/OrderReview';
