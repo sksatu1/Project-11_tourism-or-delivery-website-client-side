@@ -17,9 +17,12 @@ const Headers = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
+
                         <Nav.Link as={HashLink} to="/home#places">Places</Nav.Link>
-                        <Nav.Link as={Link} to="/myOrders">My Orders</Nav.Link>
-                        <Nav.Link as={Link} to="/allOrders">All Orders</Nav.Link>
+                        {user.email && <Nav.Link as={Link} to="/myOrders">My Orders</Nav.Link>}
+
+                        {user.email && <Nav.Link as={Link} to="/allOrders">All rders</Nav.Link>}
+
                         {user.email &&
                             <Nav.Link as={Link} to="/addPlace">Add Place</Nav.Link>
                         }
